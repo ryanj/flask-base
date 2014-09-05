@@ -32,7 +32,7 @@ except IOError:
 #  main():
 #
 if __name__ == '__main__':
-  application = imp.load_source('app', 'flaskapp.py')
+  application = imp.load_source('app', 'flaskmap.py')
   port = application.app.config['PORT']
   ip = application.app.config['IP']
   app_name = application.app.config['APP_NAME']
