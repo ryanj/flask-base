@@ -19,4 +19,4 @@ def test():
     return "<strong>It's Alive!</strong>"
 
 if __name__ == '__main__':
-    app.run()
+    app.run(app.config['IP'], app.config['PORT'])
