@@ -1,6 +1,13 @@
 # A basic Flask quickstart
 *With support for serving easy APIs and static content*
 
+## OpenShift
+Deploy to OpenShift
+```bash
+oc new-app python~https://github.com/ryanj/flask-base
+oc expose service/flask-base
+```
+
 ## Local Dev
 Initialize a python virtual environment and install module dependencies:
 ```bash
