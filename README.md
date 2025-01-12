@@ -9,16 +9,20 @@ oc expose service/flask-base
 ```
 
 ## Local Dev
-Initialize a python virtual environment and install module dependencies:
+Initialize a python virtual environment:
 ```bash
 python3 -m venv .venv
 . .venv/bin/activate
+```
+
+Install module dependencies:
+```bash
 pip install -r requirements.txt
 ```
 
-Start a local webserver:
+Start a local development server on port 8080:
 ```bash
-python3 app.py
+flask --app flaskapp run --port=8080 --debug
 ```
 
 ## License
